@@ -1,0 +1,17 @@
+<script>
+    var i = 0;
+    imgs = ["img2.jpg", "img3.jpg", "img4.jpg"];
+
+    function changimges() {
+        document.slide.src = imgs[i]
+        if (i <= imgs.length - 1) {
+            i++
+        }
+
+
+
+        setTimeout("changimges()", 1000)
+    }
+    window.onload = changimges
+</script>
+<img name="slide">
